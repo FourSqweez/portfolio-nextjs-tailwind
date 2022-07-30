@@ -12,7 +12,7 @@ const btnComponents = [
 
 const Main = () => {
 	return (
-		<div className="w-full h-screen text-center">
+		<div className="w-full h-screen text-center px-10">
 			<div className="max-w-5xl w-full h-full mx-auto p-2 flex justify-center items-center">
 				<div>
 					<p className="uppercase text-sm tracking-widest text-gray-600">
