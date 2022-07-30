@@ -2,9 +2,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import logo from '../public/assets/navbarLogo.png'
-import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from 'react-icons/ai'
-import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
+import { useRouter } from 'next/router'
+import BtnSocial from './BtnSocial'
 
 const navMenus = [
 	{ key: '/', name: 'Home' },
@@ -17,37 +17,67 @@ const navMenus = [
 const Navbar = () => {
 	const [nav, setNav] = useState(false)
 	const [shadow, setShadow] = useState(false)
+	const [navBg, setNavBg] = useState('#ecf0f3')
+	const [linkColor, setLinkColor] = useState('#1f2937')
+	const router = useRouter()
 
 	useEffect(() => {
-			const handleShadow = () => {
-				if(window.scrollY >= 90){
-					setShadow(true)
-				}else{
-					setShadow(false)
-				}
+		if (
+			router.asPath === '/amazon' ||
+			router.asPath === '/airbnb' ||
+			router.asPath === '/tesla' ||
+			router.asPath === '/movies'
+		) {
+			setNavBg('transparent')
+			setLinkColor('#f8f8f8')
+		} else {
+			setNavBg('#ecf0f3')
+			setLinkColor('#1f2937')
+		}
+	}, [router])
+
+	useEffect(() => {
+		const handleShadow = () => {
+			if (window.scrollY >= 90) {
+				setShadow(true)
+			} else {
+				setShadow(false)
 			}
-			window.addEventListener('scroll', handleShadow)
-	},[])
+		}
+		window.addEventListener('scroll', handleShadow)
+	}, [])
 
 	const handleNav = () => {
 		setNav(!nav)
 	}
 	return (
-		<div className={shadow ? "fixed w-full h-20 shadow-xl z-[100]": "fixed w-full h-20 z-[100]"}>
-			<div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-				<Image src={logo} alt="/" width="80" height="80" />
+		<div
+			style={{ backgroundColor: `${navBg}` }}
+			className={
+				shadow
+					? 'fixed w-full h-20 shadow-xl z-[100]'
+					: 'fixed w-full h-20 z-[100]'
+			}
+		>
+			<div className="flex justify-center items-center w-full h-full px-10 2xl:px-16">
 				<div>
-					<ul className="hidden md:flex">
+					
+						<div><ul style={{ color: `${linkColor}` }} className="hidden md:flex">
 						{navMenus &&
 							navMenus.map((navMenu) => (
 								<Link href={navMenu.key}>
-									<li className="ml-10 text-sm uppercase hover:border-b">
+									<li className="ml-10 p-2 text-sm uppercase hover:border-b-2 border-indigo-500">
 										{navMenu.name}
 									</li>
 								</Link>
 							))}
 					</ul>
-					<div onClick={handleNav} className="md:hidden cursor-pointer">
+					</div>
+					<div
+						style={{ color: `${linkColor}` }}
+						onClick={handleNav}
+						className="md:hidden cursor-pointer"
+					>
 						<AiOutlineMenu size={25} />
 					</div>
 				</div>
@@ -84,28 +114,20 @@ const Navbar = () => {
 							{navMenus &&
 								navMenus.map((navMenu) => (
 									<Link href={navMenu.key}>
-										<li onClick={() => handleNav()} className="py-4 text-sm">{navMenu.name}</li>
+										<li
+											onClick={() => handleNav()}
+											className="py-4 text-sm"
+										>
+											{navMenu.name}
+										</li>
 									</Link>
 								))}
 						</ul>
-						<div className="pt-40">
+						<div className="pt-10">
 							<p className="uppercase tracking-widest text-[#5651e5]">
 								let's connect'
 							</p>
-							<div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-								<div className="btn-primary">
-									<FaLinkedinIn />
-								</div>
-								<div className="btn-primary">
-									<FaGithub />
-								</div>
-								<div className="btn-primary">
-									<AiOutlineMail />
-								</div>
-								<div className="btn-primary">
-									<BsFillPersonLinesFill />
-								</div>
-							</div>
+							<BtnSocial />
 						</div>
 					</div>
 				</div>
