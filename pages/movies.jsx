@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import moviesImg from './../public/assets/projects/movies.jpg'
+import moviesImg from '../public/movies.jpg'
 import { RiRadioButtonFill } from 'react-icons/ri'
 import Link from 'next/link'
 

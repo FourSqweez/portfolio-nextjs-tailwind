@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import airbnbImg from './../public/assets/projects/airbnb.jpg'
+import airbnbImg from '../public/airbnb.jpg'
 import { RiRadioButtonFill } from 'react-icons/ri'
 import Link from 'next/link'
 
