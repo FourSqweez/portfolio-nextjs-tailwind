@@ -7,7 +7,7 @@ import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 
 const navMenus = [
-	{ key: '/#home', name: 'Home' },
+	{ key: '/', name: 'Home' },
 	{ key: '/#about', name: 'About' },
 	{ key: '/#skills', name: 'Skills' },
 	{ key: '/#projects', name: 'Project' },
@@ -28,6 +28,7 @@ const Navbar = () => {
 			}
 			window.addEventListener('scroll', handleShadow)
 	},[])
+
 	const handleNav = () => {
 		setNav(!nav)
 	}
@@ -83,7 +84,7 @@ const Navbar = () => {
 							{navMenus &&
 								navMenus.map((navMenu) => (
 									<Link href={navMenu.key}>
-										<li className="py-4 text-sm">{navMenu.name}</li>
+										<li onClick={() => handleNav()} className="py-4 text-sm">{navMenu.name}</li>
 									</Link>
 								))}
 						</ul>
