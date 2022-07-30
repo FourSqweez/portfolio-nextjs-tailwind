@@ -61,17 +61,20 @@ const Navbar = () => {
 		>
 			<div className="flex justify-center items-center w-full h-full px-10 2xl:px-16">
 				<div>
-					
-						<div><ul style={{ color: `${linkColor}` }} className="hidden md:flex">
-						{navMenus &&
-							navMenus.map((navMenu) => (
-								<Link href={navMenu.key}>
-									<li className="ml-10 p-2 text-sm uppercase hover:border-b-2 border-indigo-500">
-										{navMenu.name}
-									</li>
-								</Link>
-							))}
-					</ul>
+					<div>
+						<ul
+							style={{ color: `${linkColor}` }}
+							className="hidden md:flex"
+						>
+							{navMenus &&
+								navMenus.map((navMenu) => (
+									<Link href={navMenu.key}>
+										<li className="ml-10 p-2 text-sm uppercase hover:border-b-2 border-indigo-500">
+											{navMenu.name}
+										</li>
+									</Link>
+								))}
+						</ul>
 					</div>
 					<div
 						style={{ color: `${linkColor}` }}
@@ -113,7 +116,7 @@ const Navbar = () => {
 						<ul className="uppercase">
 							{navMenus &&
 								navMenus.map((navMenu) => (
-									<Link href={navMenu.key}>
+									<Link key={navMenu.key} href={navMenu.key}>
 										<li
 											onClick={() => handleNav()}
 											className="py-4 text-sm"

@@ -20,7 +20,7 @@ const BtnSocial = () => {
 		<div className="flex items-center justify-around max-w-sm m-auto py-4 ">
 			{btnComponents &&
 				btnComponents.map((btnComponent) => (
-					<a href={btnComponent.link} target="_blank" rel="noreferrer">
+					<a key={btnComponent.link} href={btnComponent.link} target="_blank" rel="noreferrer">
 						<div className="btn-primary hover:scale-110 p-4 sm:p-6">
 							{btnComponent.icon}
 						</div>
