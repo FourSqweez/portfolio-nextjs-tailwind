@@ -7,11 +7,11 @@ import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 
 const navMenus = [
-	{ key: '/', name: 'Home' },
-	{ key: '/about', name: 'About' },
-	{ key: '/skills', name: 'Skills' },
-	{ key: '/project', name: 'Project' },
-	{ key: '/contact', name: 'Contact' },
+	{ key: '/#home', name: 'Home' },
+	{ key: '/#about', name: 'About' },
+	{ key: '/#skills', name: 'Skills' },
+	{ key: '/#projects', name: 'Project' },
+	{ key: '/#contact', name: 'Contact' },
 ]
 
 const Navbar = () => {
