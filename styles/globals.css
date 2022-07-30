@@ -32,4 +32,7 @@
 	.btn-primary {
 		@apply rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300;
 	}
+	.back-drop {
+		@apply fixed left-0 top-0 w-full h-screen bg-black/70
+	}
 }
