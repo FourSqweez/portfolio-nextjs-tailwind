@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import TeslaImg from '../public/tesla.jpg'
+import TeslaImg from '/public/tesla.jpg'
 import { RiRadioButtonFill } from 'react-icons/ri'
 import Link from 'next/link'
 

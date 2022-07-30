@@ -1,8 +1,8 @@
 import React from 'react'
-import AirbnbImg from '../public/airbnb.jpg'
-import TeslaImg from '../public/tesla.jpg'
-import MoviesImg from '../public/movies.jpg'
-import AmazonImg from '../public/amazon.jpg'
+import AirbnbImg from '/public/airbnb.jpg'
+import TeslaImg from '/public/tesla.jpg'
+import MoviesImg from '/public/movies.jpg'
+import AmazonImg from '/public/amazon.jpg'
 import ProjectItem from './ProjectItem'
 
 const Projects = () => {
