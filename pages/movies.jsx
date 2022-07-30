@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import moviesImg from '../public/movies.jpg'
+import MoviesImg from '../public/movies.jpg'
 import { RiRadioButtonFill } from 'react-icons/ri'
 import Link from 'next/link'
 
@@ -13,7 +13,7 @@ const Movies = () => {
 					className="absolute z-1"
 					layout="fill"
 					objectFit="cover"
-					src={moviesImg}
+					src={MoviesImg}
 					alt="/"
 				/>
 				<div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
@@ -29,7 +29,7 @@ const Movies = () => {
 					<p>
 						bla bla bla เหมือนจะยังทำไม่ทัน
 						ไม่ค่อยเก่งการเขียนอิ้งซะเท่าไหร่ ฮ๋า ๆ แต่มี github กับ Demo
-						นะ ๆ 😂🙏 
+						นะ ๆ 😂🙏
 					</p>
 					<a
 						href="https://github.com/FourSqweez/movie-tv-material-ui"

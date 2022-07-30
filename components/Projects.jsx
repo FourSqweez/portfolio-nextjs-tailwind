@@ -1,8 +1,8 @@
 import React from 'react'
-import airbnbImg from '../public/airbnb.jpg'
-import teslaImg from '../public/tesla.jpg'
-import moviesImg from '../public/movies.jpg'
-import amazonImg from '../public/amazon.jpg'
+import AirbnbImg from '../public/airbnb.jpg'
+import TeslaImg from '../public/tesla.jpg'
+import MoviesImg from '../public/movies.jpg'
+import AmazonImg from '../public/amazon.jpg'
 import ProjectItem from './ProjectItem'
 
 const Projects = () => {
@@ -16,25 +16,25 @@ const Projects = () => {
 				<div className="grid md:grid-cols-2 gap-8">
 					<ProjectItem
 						title="Tesla Clone"
-						backgroundImg={teslaImg}
+						backgroundImg={TeslaImg}
 						projectUrl="/tesla"
 						tech="React JS, Redux, styled-components"
 					/>
 					<ProjectItem
 						title="Movie Hub"
-						backgroundImg={moviesImg}
+						backgroundImg={MoviesImg}
 						projectUrl="/movies"
 						tech="React JS, styled-components"
 					/>
 					<ProjectItem
 						title="Amazon Clone"
-						backgroundImg={amazonImg}
+						backgroundImg={AmazonImg}
 						projectUrl="/amazon"
 						tech="Next JS, Redux, Tailwind"
 					/>
 					<ProjectItem
 						title="AirBnb Clone"
-						backgroundImg={airbnbImg}
+						backgroundImg={AirbnbImg}
 						projectUrl="/airbnb"
 						tech="Next JS, Tailwind"
 					/>
