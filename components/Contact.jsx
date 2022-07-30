@@ -45,7 +45,7 @@ const Contact = () => {
 								<h2 className="py-2">Jeerasak Krueaniam</h2>
 								<p>Front-End Developer</p>
 								<p className="py-4">
-									I am available for freelance or full-time positions.
+									I&apos;am available for freelance or full-time positions.
 									Contact me and let&apos;s talk.
 								</p>
 								<p>Tel: 083-7543842</p>
@@ -65,7 +65,7 @@ const Contact = () => {
 								onSubmit={(e) => handleSubmit(e)}
 								action="https://getform.io/f/f83889a1-657a-47b1-baca-7eeef573c3f3"
 								method="POST"
-								enctype="multipart/form-data"
+								encType="multipart/form-data"
 								target="_blank"
 							>
 								<div className="grid md:grid-cols-2 gap-4 w-full py-2">

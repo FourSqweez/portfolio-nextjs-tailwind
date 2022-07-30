@@ -68,7 +68,7 @@ const Navbar = () => {
 						>
 							{navMenus &&
 								navMenus.map((navMenu) => (
-									<Link href={navMenu.key}>
+									<Link key={navMenu.key} href={navMenu.key}>
 										<li className="ml-10 p-2 text-sm uppercase hover:border-b-2 border-indigo-500">
 											{navMenu.name}
 										</li>
@@ -107,7 +107,7 @@ const Navbar = () => {
 						</div>
 						<div className="border-b border-gray-300 my-4">
 							<p className="w-[85%] md:w-[90%] py-4">
-								Let's build something legendary together.
+								Let&apos;s build something legendary together.
 							</p>
 						</div>
 					</div>
@@ -128,7 +128,7 @@ const Navbar = () => {
 						</ul>
 						<div className="pt-10">
 							<p className="uppercase tracking-widest text-[#5651e5]">
-								let's connect'
+								let&apos;s connect
 							</p>
 							<BtnSocial />
 						</div>
