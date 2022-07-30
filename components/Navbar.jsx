@@ -10,7 +10,7 @@ const navMenus = [
 	{ key: '/', name: 'Home' },
 	{ key: '/#about', name: 'About' },
 	{ key: '/#skills', name: 'Skills' },
-	{ key: '/#projects', name: 'Project' },
+	{ key: '/#projects', name: 'Projects' },
 	{ key: '/#contact', name: 'Contact' },
 ]
 
