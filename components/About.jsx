@@ -2,26 +2,19 @@ import React from 'react'
 
 const About = () => {
 	return (
-		<div id='about' className="w-full md:h-screen px-10 items-center py-16">
+		<div id='about' className="w-full md:h-screen px-10 items-center py-40">
 			<div className="max-w-5xl m-auto md:grid grid-cols-3 gap-8">
 				<div className="col-span-2">
 					<p className='uppercase text-xl tracking-widest text-[#5651e5]'>About</p>
 					<h2 className='py-4'>Who I Am</h2>
-					<p className='py-2 text-gray-600'>// I am not your nor mal developer</p>
-					<p className='py-2 text-gray-600'>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-						officiis libero sunt, eius voluptatem eos facilis deserunt
-						quasi odit sed obcaecati mollitia repellat animi culpa qui?
-						Illum excepturi quam similique?
+					<p className='py-2 text-gray-600'>ผมเป็นคนที่จบปีที่โควิดมาพอดี!!</p>
+					<p className='py-2 text-gray-600 indent-10'>
+						ชื่อนายจีรศักดิ์ เครือเนียม จบจากมหาวิทยาลัยขอนแก่นได้สองปีแล้วครับ
+						ตอนจบมาใหม่ ๆ ได้สมัครงานไปสองที่ และสัมภาษณ์ไม่ผ่าน จากนั้นแม่ก็ผ่าตัดตา เลยอยู่เป็นเพื่อนแม่มาสักพัก รอให้เลือกทหารเสร็จ ค่อยสมัครงาน แต่พอถึงวันเลือกทหาร เขาดันไม่ให้สละสิทธิ์ผ่อนผันหน้างานเหมือนทุก ๆ ปี เพราะโควิด ก็เลยต้องผ่อนผันไปอีกปี ระหว่างนั้นก็ฝึกเขียนโค้ดมาตลอด แต่เปลี่ยนสายจาก Android (kotlin) มาเป็นฝึกเขียน JS ฝึกมาได้สักสามเดือนก็รู้สึกว่าพอไม่ได้เงินแล้วไม่ค่อยอยากทำต่อ ก็เลยเข้าไปในโลกของ Gamefi ได้เกือบปี และเพิ่งจะลาออก มาทบทวนการเขียนโค้ดใหม่เพื่อหาสมัครงานจริงจังครับ
 					</p>
-					<p className='py-2 text-gray-600'>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Quaerat, alias autem animi sint, consequuntur eos non
-						dignissimos in esse tenetur ea! Corrupti impedit numquam vero
-						voluptatem dicta maxime fugiat necessitatibus eaque illo
-						beatae debitis cumque eos obcaecati nemo, voluptatibus esse.
+					<p className='py-2 text-gray-600 indent-10'>
+						พอกลับมาฝึกแบบจริงจังและเน้นอ่านจาก Document และทำตาม Workshop ของ Official เว็บไซต์ ก็รู้สึกสนุก และอยากจะพัฒนาไปมากกว่านี้ ที่สำคัญที่สุดคืออยากเห็นการทำงาน อยากเห็นโค้ดของคนอื่น อยากมีเพื่อนคุยเรื่องพวกนี้ เลยอยากขอความกรุณาด้วยครับ 🙂
 					</p>
-					<p className='py-2 text-gray-600 underline cursor-pointer'>Check out some of my latest projects.</p>
 				</div>
 				<div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center hover:scale-105 p-4 ease-in duration-300'>
 					<img className='rounded-xl'
