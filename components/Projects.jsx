@@ -1,5 +1,3 @@
-import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 import airbnbImg from '../public/assets/projects/airbnb.jpg'
 import teslaImg from '../public/assets/projects/tesla.jpg'
@@ -19,26 +17,25 @@ const Projects = () => {
 					<ProjectItem
 						title="Tesla Clone"
 						backgroundImg={teslaImg}
-						projectUrl="/property"
+						projectUrl="/tesla"
 						tech="React JS, Redux, styled-components"
 					/>
 					<ProjectItem
-
-						title="Movie HuB"
+						title="Movie Hub"
 						backgroundImg={moviesImg}
-						projectUrl="/crypto"
+						projectUrl="/movies"
 						tech="React JS, styled-components"
 					/>
 					<ProjectItem
 						title="Amazon Clone"
 						backgroundImg={amazonImg}
-						projectUrl="/twitch"
+						projectUrl="/amazon"
 						tech="Next JS, Redux, Tailwind"
 					/>
 					<ProjectItem
 						title="AirBnb Clone"
 						backgroundImg={airbnbImg}
-						projectUrl="/twitch"
+						projectUrl="/airbnb"
 						tech="Next JS, Tailwind"
 					/>
 				</div>
