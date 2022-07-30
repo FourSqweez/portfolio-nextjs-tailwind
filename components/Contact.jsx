@@ -1,11 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import { AiOutlineMail } from 'react-icons/ai'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
 import ContactImg from '../public/assets/contact.jpg'
+import BtnSocial from './BtnSocial'
 
 const Contact = () => {
 	const [name, setName] = useState('')
@@ -14,16 +12,19 @@ const Contact = () => {
 	const [subject, setSubject] = useState('')
 	const [message, setMessage] = useState('')
 
-	const handleSubmit = () => {
-		setName('')
-		setPhone('')
-		setEmail('')
-		setSubject('')
-		setMessage('')
+	const handleSubmit = (e) => {
+		if (name || phone || email || subject || message !== '') {
+			setName(e.target.value)
+			setPhone(e.target.value)
+			setEmail(e.target.value)
+			setSubject(e.target.value)
+			setMessage(e.target.value)
+		} else {
+		}
 	}
 
 	return (
-		<div id="contact" className="w-full lg:h-screen px-10">
+		<div id="contact" className="w-full lg:h-screen px-10 py-20">
 			<div className="max-w-[1240px] m-auto px-2 py-16 w-full ">
 				<p className="text-xl tracking-widest uppercase text-[#5651e5]">
 					Contact
@@ -47,40 +48,12 @@ const Contact = () => {
 									I am available for freelance or full-time positions.
 									Contact me and let&apos;s talk.
 								</p>
+								<p>Tel: 083-7543842</p>
+								<p>Line ID: Four7518</p>
 							</div>
 							<div>
 								<p className="uppercase pt-8">Connect With Me</p>
-								<div className="flex items-center justify-evenly py-4">
-									<a
-										href="https://www.linkedin.com/in/clint-briley-50056920a/"
-										target="_blank"
-										rel="noreferrer"
-									>
-										<div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-											<FaLinkedinIn />
-										</div>
-									</a>
-									<a
-										href="https://github.com/fireclint"
-										target="_blank"
-										rel="noreferrer"
-									>
-										<div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-											<FaGithub />
-										</div>
-									</a>
-
-									<div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-										<AiOutlineMail />
-									</div>
-									<Link href="/resume">
-										<a>
-											<div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-												<BsFillPersonLinesFill />
-											</div>
-										</a>
-									</Link>
-								</div>
+								<BtnSocial />
 							</div>
 						</div>
 					</div>
@@ -89,9 +62,11 @@ const Contact = () => {
 					<div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
 						<div className="p-4">
 							<form
-								onSubmit={handleSubmit}
-								action="https://getform.io/f/08ebcd37-f5b5-45be-8c13-714f011ce060"
+								onSubmit={(e) => handleSubmit(e)}
+								action="https://getform.io/f/f83889a1-657a-47b1-baca-7eeef573c3f3"
 								method="POST"
+								enctype="multipart/form-data"
+								target="_blank"
 							>
 								<div className="grid md:grid-cols-2 gap-4 w-full py-2">
 									<div className="flex flex-col">
@@ -99,6 +74,7 @@ const Contact = () => {
 											Name
 										</label>
 										<input
+											required
 											className="border-2 rounded-lg p-3 flex border-gray-300"
 											type="text"
 											name="name"
@@ -111,10 +87,14 @@ const Contact = () => {
 											Phone Number
 										</label>
 										<input
+											required
 											className="border-2 rounded-lg p-3 flex border-gray-300"
-											type="text"
+											type="tel"
+											id="phone"
 											name="phone"
 											value={phone}
+											placeholder="123-45-678"
+											pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
 											onChange={(e) => setPhone(e.target.value)}
 										/>
 									</div>
@@ -124,9 +104,11 @@ const Contact = () => {
 										Email
 									</label>
 									<input
+										required
 										className="border-2 rounded-lg p-3 flex border-gray-300"
 										type="email"
 										name="email"
+										placeholder="example@gmail.com"
 										value={email}
 										onChange={(e) => setEmail(e.target.value)}
 									/>
@@ -136,6 +118,7 @@ const Contact = () => {
 										Subject
 									</label>
 									<input
+										required
 										className="border-2 rounded-lg p-3 flex border-gray-300"
 										type="text"
 										name="subject"
@@ -152,6 +135,7 @@ const Contact = () => {
 										rows="10"
 										name="message"
 										value={message}
+										required
 										onChange={(e) => setMessage(e.target.value)}
 									></textarea>
 								</div>
