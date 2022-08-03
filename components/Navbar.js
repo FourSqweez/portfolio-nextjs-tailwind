@@ -5,7 +5,7 @@ import logo from '../public/assets/navbarLogo.png'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import { useRouter } from 'next/router'
 import BtnSocial from './BtnSocial'
-import { getAllProjects } from '../pages/lib/helper'
+import { getAllProjects } from './lib/helper'
 
 const navMenus = [
 	{ key: '', name: 'Home' },

@@ -4,7 +4,7 @@ import Main from '../components/Main'
 import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 import Contact from './../components/Contact'
-import { getAllProjects } from './lib/helper'
+import { getAllProjects } from '../components/lib/helper'
 
 export const getStaticProps = async () => {
 	const projects = await getAllProjects()
