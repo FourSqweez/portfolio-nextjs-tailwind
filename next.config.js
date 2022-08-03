@@ -2,15 +2,8 @@
 const nextConfig = {
 	reactStrictMode: false,
 	swcMinify: true,
-	experimental: {
-		images: {
-			remotePatterns: [
-				{
-					protocol: 'https',
-					hostname: '**.unsplash.com',
-				},
-			],
-		},
+	images: {
+		domains: ['images.unsplash.com'],
 	},
 }
 
