@@ -59,7 +59,7 @@ export default function Detail({ project }) {
 									</p>
 									<div className="grid grid-cols-3 md:grid-cols-1 ">
 										{p.tech.map((t) => (
-											<p className="text-gray-600 py-2 flex items-center">
+											<p key={t} className="text-gray-600 py-2 flex items-center">
 												<RiRadioButtonFill className="pr-1" />
 												{t}
 											</p>
