@@ -27,7 +27,7 @@ const BtnSocial = () => {
 						key={btnComponent.link}
 						href={btnComponent.link}
 						target="_blank"
-						rel="/"
+						rel="noreferrer"
 					>
 						<div className="btn-primary hover:scale-110 p-4 sm:p-6">
 							{btnComponent.icon}
