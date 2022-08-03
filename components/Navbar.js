@@ -118,7 +118,7 @@ const Navbar = () => {
 						<ul className="uppercase">
 							{navMenus &&
 								navMenus.map((navMenu) => (
-									<Link key={navMenu.key} href={navMenu.key}>
+									<Link key={navMenu.key} href={`/#${navMenu.key}`}>
 										<li
 											onClick={() => handleNav()}
 											className="py-4 text-sm"
