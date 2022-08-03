@@ -36,7 +36,7 @@ const Navbar = () => {
 			setNavBg('#ecf0f3')
 			setLinkColor('#1f2937')
 		}
-	}, [router])
+	}, [router, URL])
 
 	useEffect(() => {
 		const handleShadow = () => {
