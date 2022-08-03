@@ -4,8 +4,14 @@ import Main from '../components/Main'
 import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 import Contact from './../components/Contact'
+import { getAllProjects } from './lib/helper'
 
-export default function Home() {
+export const getStaticProps = async () => {
+	const projects = await getAllProjects()
+	return { props: { projects } }
+}
+
+export default function Home({ projects }) {
 	return (
 		<div>
 			<Head>
@@ -16,7 +22,7 @@ export default function Home() {
 			<Main />
 			<About />
 			<Skills />
-			<Projects />
+			<Projects projects={projects} />
 			<Contact />
 		</div>
 	)
