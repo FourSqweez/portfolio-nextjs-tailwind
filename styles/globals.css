@@ -34,9 +34,15 @@ html {
 
 @layer components {
 	.btn-primary {
-		@apply rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300;
+		@apply rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 items-center justify-center flex;
 	}
 	.back-drop {
-		@apply fixed left-0 top-0 w-full h-screen bg-black/70
+		@apply fixed left-0 top-0 w-full h-screen bg-black/70 z-10
+	}
+	.input-form {
+		@apply border-2 rounded-lg p-3 flex border-gray-300
+	}
+	.label-form {
+		@apply flex flex-col py-2
 	}
 }
