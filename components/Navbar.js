@@ -71,7 +71,7 @@ const Navbar = () => {
 							{navMenus &&
 								navMenus.map((navMenu) => (
 									<Link key={navMenu.key} href={`/#${navMenu.key}`}>
-										<li className="ml-10 p-2 text-sm uppercase border-b-2 hover:border-indigo-500">
+										<li className="ml-10 p-2 text-sm uppercase hover:text-indigo-500">
 											{navMenu.name}
 										</li>
 									</Link>
