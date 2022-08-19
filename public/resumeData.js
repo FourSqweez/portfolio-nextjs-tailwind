@@ -19,12 +19,6 @@ export const data = {
 		resumedownload: '',
 		social: [
 			{
-				name: 'facebook',
-				url: 'https://www.facebook.com/foursqweez',
-				className: 'fa fa-facebook',
-				iconName: 'BsFacebook',
-			},
-			{
 				name: 'linkedin',
 				url: 'https://www.linkedin.com/in/jeerasak-krueanaim-5a2289208/',
 				className: 'fa fa-linkedin',
