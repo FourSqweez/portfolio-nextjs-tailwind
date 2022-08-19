@@ -11,7 +11,6 @@ const btnComponents = [
 	},
 	{ icon: <FaGithub />, link: 'https://github.com/FourSqweez' },
 	{ icon: <AiOutlineMail />, link: 'mailto:kjeerasak@kkumail.com' },
-	{ icon: <BsFacebook />, link: 'https://www.facebook.com/foursqweez' },
 	{
 		icon: <SiNotion />,
 		link: 'https://moored-kettle-0b0.notion.site/Fullstack-Developer-2ed4c3301c734eea96cafca884eab5b1',
