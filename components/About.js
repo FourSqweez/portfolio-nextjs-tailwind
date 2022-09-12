@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Profile from '../public/images/profile.jpg'
 
 const About = () => {
 	return (
@@ -8,6 +9,15 @@ const About = () => {
 			className="w-full md:h-screen px-10 items-center lg:py-40"
 		>
 			<div className="max-w-5xl m-auto md:grid grid-cols-3 gap-8">
+				<div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center hover:scale-105 p-4 mb-20 xs:mb-0 ease-in duration-300">
+					<Image
+						className="rounded-xl"
+						src={Profile}
+						alt="test"
+						width={550}
+						height={850}
+					/>
+				</div>
 				<div className="col-span-2">
 					<p className="uppercase text-xl tracking-widest text-[#5651e5]">
 						About
@@ -35,15 +45,6 @@ const About = () => {
 						ที่สำคัญที่สุดคืออยากเห็นการทำงาน อยากเห็นโค้ดของคนอื่น
 						อยากมีเพื่อนคุยเรื่องพวกนี้ เลยอยากขอความกรุณาด้วยครับ 🙂
 					</p>
-				</div>
-				<div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center hover:scale-105 p-4 mb-20 xs:mb-0 ease-in duration-300">
-					<Image
-						className="rounded-xl"
-						src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
-						alt="test"
-						width={550}
-						height={800}
-					/>
 				</div>
 			</div>
 		</div>
