@@ -24,7 +24,7 @@ const About = () => {
 					</p>
 					<h2 className="py-4">Who I Am</h2>
 					<p className="py-2 text-gray-600">
-						Hello I'm Jeerasak Krueaniam and you can call me Four
+						Hello I&apos;m Jeerasak Krueaniam and you can call me Four
 					</p>
 					<p className="py-2 text-gray-600 indent-10">
 						I graduated from Khon Kaen University. Computer Science
