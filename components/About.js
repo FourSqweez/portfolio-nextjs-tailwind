@@ -6,7 +6,7 @@ const About = () => {
 	return (
 		<div
 			id="about"
-			className="w-full md:h-screen px-10 items-center lg:py-40"
+			className="w-full md:h-screen px-10 items-center lg:py-28"
 		>
 			<div className="max-w-5xl m-auto md:grid grid-cols-3 gap-8">
 				<div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center hover:scale-105 p-4 mb-20 xs:mb-0 ease-in duration-300">
@@ -25,7 +25,7 @@ const About = () => {
 					</p>
 					<h2 className="py-4">Who I Am</h2>
 					<p className="py-2 text-gray-600">
-						Hello I&apos;m Jeerasak Krueaniam and you can call me Four
+						Hello I&apos;m Jeerasak Krueaniam and you can call me Four!
 					</p>
 					<p className="py-2 text-gray-600 indent-10">
 						I graduated with a Computer Science major from Khon Kaen
@@ -49,7 +49,10 @@ const About = () => {
 						important is not programming language but it is English
 						because nowadays it has a lot of languages or libraries and
 						yeah it has good documents too so if we want to do something
-						we just read the document
+						we just read the document. And the most thing that I like is
+						when I can discuss code with someone who has a different way
+						that it's better than the usual way and we can recommend while
+						improving each other.
 					</p>
 				</div>
 			</div>
