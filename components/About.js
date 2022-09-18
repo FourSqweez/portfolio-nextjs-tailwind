@@ -16,6 +16,7 @@ const About = () => {
 						alt="test"
 						width={550}
 						height={850}
+						priority
 					/>
 				</div>
 				<div className="col-span-2">
