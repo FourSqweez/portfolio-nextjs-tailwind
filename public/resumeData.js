@@ -157,6 +157,17 @@ export const data = {
 					'https://github.com/FourSqweez/airbnb-nextjs-tailwind-mapbox',
 				url: 'airbnb',
 			},
+			{
+				project_id: '6',
+				title: 'POD books store',
+				tech: ['Next JS', 'Tailwind', 'Redux'],
+				category: '',
+				image: '/images/pod-book-store.jpg',
+				urlDemo: 'https://pod-bookstore-nextjs-tailwind-redux.vercel.app/',
+				urlGithub:
+					'https://github.com/FourSqweez/pod-bookstore-nextjs-tailwind-redux',
+				url: 'pod-book-store',
+			},
 		],
 	},
 	testimonials: {
