@@ -36,10 +36,10 @@ const About = () => {
 						to be a full-stack developer. Currently I can use React js,
 						Next js for front-end in javascript while studying typescript.
 						I have a lot of libraries that I&apos;m interested like
-						webGL,web3, 3D, and Animation but for now I just want to get
-						my first job. I have done a lot of projects that I try to
-						practice but it feels like it&apos;s not the real project so I
-						want to do the real project haha.
+						webGL,web3, 3D, animation and Ruby on Rails but for now I just
+						want to get my first job. I have done a lot of projects that I
+						try to practice but it feels like it&apos;s not the real
+						project so I want to do the real project haha.
 					</p>
 					<p className="py-2 text-gray-600 indent-10">
 						Coding is funny? Yeah, it&apos;s so fun when I discover a new
