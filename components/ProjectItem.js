@@ -18,7 +18,11 @@ const ProjectItem = ({ title, backgroundImg, tech, projectUrl }) => {
 					{title}
 				</h3>
 				<p className="p-1 pt-2 text-white text-center text-xs sm:text-2xl lg:text-[1.2rem]">
-					{tech}
+					{tech.map((t, index) => (
+						<h4 className="inline" key={t}>
+							{(index ? ', ' : '') + t}
+						</h4>
+					))}
 				</p>
 
 				<Link
