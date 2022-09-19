@@ -117,6 +117,8 @@ export const data = {
 				title: 'Movie Hub',
 				tech: ['React JS', 'Axios', 'Styled-Components', 'Material-UI'],
 				category: '',
+				description:
+					'This project is a website that showing movies from movies api and you can see a lot of movies and you can filter movies from the tag of genre. If you clicked on the movies cards it will show the description and actors',
 				image: '/images/movies.jpg',
 				urlDemo: 'https://movie-tv-material-ui.vercel.app/',
 				urlGithub: 'https://github.com/FourSqweez/movie-tv-material-ui',
@@ -127,6 +129,8 @@ export const data = {
 				title: 'Tesla Clone',
 				tech: ['React JS', 'Redux', 'Styled-Components'],
 				category: '',
+				description:
+					'This project is a website about tesla clone that I try too clone the tesla website UI. It has smooth scroll and responsive UI ',
 				image: '/images/tesla.jpg',
 				urlDemo:
 					'https://react-tesla-clone-redux-styled-components.vercel.app/',
@@ -139,6 +143,8 @@ export const data = {
 				title: 'Amazon Clone',
 				tech: ['Next JS', 'Redux', 'Tailwind'],
 				category: '',
+				description:
+					'This project is a website about Amazon Clone that I try to clone the website ui. In this website you can add the products to cart and make payment wite fake data',
 				image: '/images/amazon.jpg',
 				urlDemo:
 					'https://nextjs-amazon-clone-tailwind-redux-firebase.vercel.app/',
@@ -151,6 +157,8 @@ export const data = {
 				title: 'Air bnb Clone',
 				tech: ['Next JS', 'Tailwind'],
 				category: '',
+				description:
+					'This project is a website about Air bnb Clone that I try to clone the website UI. You can use the search to find some of the place that you want to see',
 				image: '/images/airbnb.jpg',
 				urlDemo: 'https://airbnb-nextjs-tailwind-mapbox.vercel.app/',
 				urlGithub:
@@ -162,6 +170,8 @@ export const data = {
 				title: 'POD books store',
 				tech: ['Next JS', 'Tailwind', 'Redux'],
 				category: '',
+				description:
+					'This website is a POD website that sale the books and it can add the books to cart and calculate price and promotion and then if you clicked to checkout it will showing you the bill after calculate with the promotions',
 				image: '/images/pod-book-store.jpg',
 				urlDemo: 'https://pod-bookstore-nextjs-tailwind-redux.vercel.app/',
 				urlGithub:

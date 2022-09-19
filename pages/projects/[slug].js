@@ -41,11 +41,7 @@ export default function Detail({ project }) {
 							<div className="col-span-4">
 								<p>Project</p>
 								<h2>Overview</h2>
-								<p className="mt-10 mb-5">
-									bla bla bla เหมือนจะยังทำไม่ทัน
-									ไม่ค่อยเก่งการเขียนอิ้งซะเท่าไหร่ ฮ่า ๆ แต่มี github
-									กับ Demo นะ ๆ 😂🙏
-								</p>
+								<p className="mt-10 mb-5">{p.description}</p>
 								<a href={p.urlGithub} target="_blank" rel="noreferrer">
 									<button className="px-8 py-2 mt-4 mr-8">Code</button>
 								</a>
