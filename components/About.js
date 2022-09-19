@@ -25,7 +25,7 @@ const About = () => {
 					</p>
 					<h2 className="py-4">Who I Am</h2>
 					<p className="py-2 text-gray-600">
-						Hello I&apos;m Jeerasak Krueaniam and you can call me Four!
+						Hello I&apos;m Jeerasak Krueaniam, but you can call me Four!
 					</p>
 					<p className="py-2 text-gray-600 indent-10">
 						I graduated with a Computer Science major from Khon Kaen
@@ -33,19 +33,19 @@ const About = () => {
 					</p>
 					<p className="py-2 text-gray-600 indent-10">
 						I want to be a front-end developer and in the future, I want
-						to be a full-stack developer. Now I can use React js, Next js
-						for front-end in javascript while studying typescript. I have
-						a lot of libraries that I&apos;m interested like webGL,web3,
-						3D, and Animation but now I just want to get my first job. I
-						have done a lot of projects that I try to practice but it
-						feels like it&apos;s not the real project so I want to do the
-						real project haha.
+						to be a full-stack developer. Currently I can use React js,
+						Next js for front-end in javascript while studying typescript.
+						I have a lot of libraries that I&apos;m interested like
+						webGL,web3, 3D, and Animation but for now I just want to get
+						my first job. I have done a lot of projects that I try to
+						practice but it feels like it&apos;s not the real project so I
+						want to do the real project haha.
 					</p>
 					<p className="py-2 text-gray-600 indent-10">
-						Coding is so funny? Yeah, it&apos;s so funny when I discover a
-						new way that I can shortly write good code and still have the
-						best performant. I like to compare the library and choose what
-						is the best so it so funny I think the language that most
+						Coding is funny? Yeah, it&apos;s so fun when I discover a new
+						way to quickly write good code and still have the best
+						performance. I like to compare the library and choose what is
+						the best so it so funny. I think the language that most
 						important is not programming language but it is English
 						because nowadays it has a lot of languages or libraries and
 						yeah it has good documents too so if we want to do something
