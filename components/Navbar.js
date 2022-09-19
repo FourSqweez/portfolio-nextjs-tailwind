@@ -76,8 +76,18 @@ const Navbar = () => {
 										</li>
 									</Link>
 								))}
+
+							<a
+								href="/assets/pdf/jeerasak_krueaniam_resume.pdf"
+								download
+							>
+								<li className="ml-10 p-2 text-sm uppercase text-blue-500 hover:text-blue-800 animate-bounce">
+									Download my Resume
+								</li>
+							</a>
 						</ul>
 					</div>
+
 					<div
 						style={{ color: `${linkColor}` }}
 						onClick={handleNav}
@@ -121,12 +131,20 @@ const Navbar = () => {
 									<Link key={navMenu.key} href={`/#${navMenu.key}`}>
 										<li
 											onClick={() => handleNav()}
-											className="py-4 text-sm"
+											className="py-4 text-sm uppercase hover:text-indigo-500"
 										>
 											{navMenu.name}
 										</li>
 									</Link>
 								))}
+							<a
+								href="/assets/pdf/jeerasak_krueaniam_resume.pdf"
+								download
+							>
+								<li className="mt-2 text-sm uppercase text-blue-500 hover:text-blue-800 animate-bounce">
+									Download my Resume
+								</li>
+							</a>
 						</ul>
 						<div className="pt-10">
 							<p className="uppercase tracking-widest text-[#5651e5]">
