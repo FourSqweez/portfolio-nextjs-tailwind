@@ -3,7 +3,6 @@ import React from 'react'
 import { data } from '../public/resumeData'
 
 const Skills = () => {
-	console.log('Skill data: ', data.resume.skills)
 	const skills = data.resume.skills
 
 	return (
